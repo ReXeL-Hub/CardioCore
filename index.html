@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CardioCore - Premium Cardio Training Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="pulse-animation"></div>
+    <header>
+        <nav>
+            <div class="logo">CardioCore<span class="heartbeat-icon"><i class="fas fa-heartbeat"></i></span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#programs">Training Programs</a></li>
+                <li><a href="#cardio-science">Cardio Science</a></li>
+                <li><a href="#tips">Pro Tips</a></li>
+                <li><a href="#calculator" class="nav-highlight">Cardio Calculator</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">Scientifically Backed</div>
+            <h1>Elevate Your <span class="highlight">Cardio</span> Training</h1>
+            <p>Unlock the science-backed techniques that transform your heart health, maximize endurance, and burn fat 3x more efficiently</p>
+            <div class="cta-container">
+                <button id="cardioButton" class="cta-button">Explore Cardio Programs <i class="fas fa-chevron-right"></i></button>
+                <a href="#cardio-science" class="secondary-cta">Learn the Science <i class="fas fa-flask"></i></a>
+            </div>
+            <div class="hero-metrics">
+                <div class="metric">
+                    <span class="count">87%</span>
+                    <span class="label">Improved Endurance</span>
+                </div>
+                <div class="metric">
+                    <span class="count">3x</span>
+                    <span class="label">Faster Results</span>
+                </div>
+                <div class="metric">
+                    <span class="count">30+</span>
+                    <span class="label">Workout Types</span>
+                </div>
+            </div>
+        </div>
+        <div class="cardio-animation">
+            <div class="heart-rate">
+                <svg viewBox="0 0 800 300">
+                    <polyline class="heart-line" points="0,150 100,150 130,100 160,200 190,100 220,200 250,100 280,200 310,100 340,150 400,50 460,150 500,150 540,100 570,200 600,100 630,200 660,100 690,200 720,100 750,150 800,150"></polyline>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <div id="cardioModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="tabs">
+                <button class="tab-button active" data-tab="hiit">HIIT</button>
+                <button class="tab-button" data-tab="tempo">Tempo Runs</button>
+                <button class="tab-button" data-tab="sprints">Stair Sprints</button>
+                <button class="tab-button" data-tab="circuit">Circuit Training</button>
+                <button class="tab-button" data-tab="dance">Dance Cardio</button>
+            </div>
+
+            <div id="hiit" class="tab-content active">
+                <h2>1. High-Intensity Interval Training (HIIT) - Fastest Results</h2>
+                <div class="content-section">
+                    <div class="text-content">
+                        <ul>
+                            <li>Alternates between short bursts of intense effort and rest</li>
+                            <li>Boosts heart health, endurance, and burns fat in less time</li>
+                            <li>10-15 min sessions highly effective</li>
+                        </ul>
+                        <h3>Example 20-minute HIIT workout:</h3>
+                        <div class="workout-table">
+                            <table>
+                                <tr>
+                                    <td>Jumping jacks</td>
+                                    <td>30 sec</td>
+                                </tr>
+                                <tr>
+                                    <td>Rest</td>
+                                    <td>15 sec</td>
+                                </tr>
+                                <tr>
+                                    <td>High knees</td>
+                                    <td>30 sec</td>
+                                </tr>
+                                <tr>
+                                    <td>Rest</td>
+                                    <td>15 sec</td>
+                                </tr>
+                                <tr>
+                                    <td>Burpees</td>
+                                    <td>30 sec</td>
+                                </tr>
+                                <tr>
+                                    <td>Rest</td>
+                                    <td>15 sec</td>
+                                </tr>
+                                <tr>
+                                    <td>Mountain climbers</td>
+                                    <td>30 sec</td>
+                                </tr>
+                                <tr>
+                                    <td>Rest</td>
+                                    <td>15 sec</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">*Repeat 3-4 rounds*</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="video-links">
+                        <h3>Tutorial Videos:</h3>
+                        <ul>
+                            <li><a href="https://www.youtube.com/watch?v=c4DAnQ6DIF8" target="_blank">Jumping Jacks <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="https://www.youtube.com/watch?v=OAJ_J3EZkdY" target="_blank">High Knees <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="https://www.youtube.com/watch?v=TU8QYVW0gDU" target="_blank">Burpees <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="https://www.youtube.com/shorts/9yyKVy8OWnA" target="_blank">Mountain Climbers <i class="fas fa-external-link-alt"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tempo" class="tab-content">
+                <h2>2. Tempo Runs or Jog-Sprints</h2>
+                <div class="content-section">
+                    <div class="text-content">
+                        <ul>
+                            <li>Builds speed and endurance</li>
+                            <li>Pushes aerobic threshold</li>
+                        </ul>
+                        <h3>Example:</h3>
+                        <ul class="workout-steps">
+                            <li>Warm-up: 5 min jog</li>
+                            <li>1 min fast run / 1 min walk (x6-10)</li>
+                            <li>Cool down: 3 min light jog or walk</li>
+                        </ul>
+                        <div class="tutorial-link">
+                            <a href="https://www.youtube.com/shorts/CWP6imC-vnU" target="_blank">Watch Tempo Run Tutorial <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sprints" class="tab-content">
+                <h2>3. Stair or Hill Sprints</h2>
+                <div class="content-section">
+                    <div class="text-content">
+                        <ul>
+                            <li>Combines power and cardio</li>
+                            <li>Sprint 15-30 sec, walk down, repeat 6-10x</li>
+                        </ul>
+                        <div class="tutorial-link">
+                            <a href="https://www.youtube.com/shorts/Z_ciNFaNpvs" target="_blank">Watch Hill Sprints Tutorial <i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://www.youtube.com/shorts/5uYv9Y_nYx8" target="_blank">Watch Stair Sprints Tutorial <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="circuit" class="tab-content">
+                <h2>4. Circuit Training with Bodyweight Exercises</h2>
+                <div class="content-section">
+                    <div class="text-content">
+                        <ul>
+                            <li>Keeps heart rate elevated</li>
+                            <li>Adds strength element</li>
+                        </ul>
+                        <h3>Example Circuit (3-4 rounds):</h3>
+                        <ul class="exercise-list">
+                            <li>20 air squats <a href="https://www.youtube.com/shorts/dVjfUlXK93k" target="_blank"><i class="fas fa-video"></i></a></li>
+                            <li>10 push-ups <a href="https://www.youtube.com/shorts/_YrJc-kTYA0" target="_blank"><i class="fas fa-video"></i></a></li>
+                            <li>20 mountain climbers <a href="https://www.youtube.com/shorts/9yyKVy8OWnA" target="_blank"><i class="fas fa-video"></i></a></li>
+                            <li>10 jump squats <a href="https://www.youtube.com/shorts/IfqrxS_-8oU" target="_blank"><i class="fas fa-video"></i></a></li>
+                            <li>30 sec plank <a href="https://www.youtube.com/shorts/v25dawSzRTM" target="_blank"><i class="fas fa-video"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="dance" class="tab-content">
+                <h2>5. Cardio Dance or Kickboxing</h2>
+                <div class="content-section">
+                    <div class="text-content">
+                        <ul>
+                            <li>Fun, full-body, continuous movement</li>
+                            <li>Great for beginners or variety</li>
+                            <li>Try 20-30 min 2-3x/week</li>
+                        </ul>
+                        <div class="tutorial-link">
+                            <a href="https://www.youtube.com/watch?v=RFfbZV3bwys" target="_blank">Watch Dance Cardio Tutorial <i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://www.youtube.com/shorts/rdi5rX_rd58" target="_blank">Watch Shadowboxing Tutorial <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="programs" class="programs-section">
+        <h2>Featured Programs</h2>
+        <div class="program-cards">
+            <div class="program-card">
+                <div class="card-icon"><i class="fas fa-bolt"></i></div>
+                <h3>4-Week HIIT Challenge</h3>
+                <p>Progressive high-intensity workouts to transform your cardio in just 4 weeks</p>
+                <a href="hiit-challenge.html" class="card-link">View Program</a>
+            </div>
+            <div class="program-card">
+                <div class="card-icon"><i class="fas fa-fire"></i></div>
+                <h3>Fat-Burning Circuit</h3>
+                <p>Maximize calorie burn with these scientifically designed circuit workouts</p>
+                <a href="fat-burning.html" class="card-link">View Program</a>
+            </div>
+            <div class="program-card">
+                <div class="card-icon"><i class="fas fa-heart"></i></div>
+                <h3>Heart Health Bootcamp</h3>
+                <p>Improve cardiovascular fitness with this balanced approach to cardio training</p>
+                <a href="heart-health.html" class="card-link">View Program</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="cardio-science" class="science-section">
+        <div class="section-header">
+            <h2>The Science of Cardio</h2>
+            <p class="section-subtitle">Understanding how cardio training transforms your body</p>
+        </div>
+        
+        <div class="science-container">
+            <div class="science-graphic">
+                <div class="heart-container">
+                    <div class="heart">
+                        <div class="heart-inner"></div>
+                    </div>
+                    <div class="pulse-rings">
+                        <div class="ring ring1"></div>
+                        <div class="ring ring2"></div>
+                        <div class="ring ring3"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="science-content">
+                <div class="science-tabs">
+                    <button class="science-tab active" data-target="aerobic">Aerobic Benefits</button>
+                    <button class="science-tab" data-target="anaerobic">Anaerobic Training</button>
+                    <button class="science-tab" data-target="heart">Heart Adaptations</button>
+                    <button class="science-tab" data-target="hormones">Hormonal Effects</button>
+                </div>
+                
+                <div class="science-content-container">
+                    <div id="aerobic" class="science-panel active">
+                        <h3>Aerobic Adaptations</h3>
+                        <div class="science-detail">
+                            <div class="science-icon"><i class="fas fa-lungs"></i></div>
+                            <div class="science-text">
+                                <h4>Increased Oxygen Utilization</h4>
+                                <p>Regular cardio training increases your body's ability to use oxygen more efficiently. Your muscles develop more mitochondria (the "powerhouses" of cells), which helps produce more energy during exercise.</p>
+                                <div class="science-stat">
+                                    <span class="stat-number">20%</span>
+                                    <span class="stat-label">Average VO₂ max improvement with 8 weeks of structured cardio</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="anaerobic" class="science-panel">
+                        <h3>Anaerobic Training Science</h3>
+                        <div class="science-detail">
+                            <div class="science-icon"><i class="fas fa-bolt"></i></div>
+                            <div class="science-text">
+                                <h4>Lactate Threshold Improvement</h4>
+                                <p>High-intensity interval training enhances your body's ability to clear lactate from the bloodstream. This pushes your anaerobic threshold higher, allowing you to work harder for longer before fatigue sets in.</p>
+                                <div class="science-stat">
+                                    <span class="stat-number">2-3x</span>
+                                    <span class="stat-label">More effective at improving lactate threshold than steady-state cardio</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="heart" class="science-panel">
+                        <h3>Heart Adaptations</h3>
+                        <div class="science-detail">
+                            <div class="science-icon"><i class="fas fa-heartbeat"></i></div>
+                            <div class="science-text">
+                                <h4>Cardiac Hypertrophy</h4>
+                                <p>The heart is a muscle that grows stronger with cardio training. Your heart chambers enlarge and cardiac muscle strengthens, allowing more blood to be pumped with each beat (increased stroke volume).</p>
+                                <div class="science-stat">
+                                    <span class="stat-number">10-20%</span>
+                                    <span class="stat-label">Increase in stroke volume after 6 months of consistent training</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="hormones" class="science-panel">
+                        <h3>Hormonal Effects</h3>
+                        <div class="science-detail">
+                            <div class="science-icon"><i class="fas fa-flask"></i></div>
+                            <div class="science-text">
+                                <h4>Endorphin Release</h4>
+                                <p>During cardio exercise, your body releases endorphins, dopamine, and serotonin - neurotransmitters that reduce pain perception, improve mood, and create the "runner's high" sensation.</p>
+                                <div class="science-stat">
+                                    <span class="stat-number">30 min</span>
+                                    <span class="stat-label">Minimum cardio duration for optimal endorphin release</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="science-cta">
+                    <a href="https://74fazey.vercel.app" target="_blank" class="science-button">Explore Full Research <i class="fas fa-graduation-cap"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tips" class="tips-section">
+        <h2>Pro Tips to Improve Faster</h2>
+        <div class="tips-container">
+            <div class="tip">
+                <div class="tip-icon"><i class="fas fa-calendar-alt"></i></div>
+                <h3>Optimal Frequency</h3>
+                <p>Train 4-5x per week mixing HIIT and steady cardio for best results</p>
+            </div>
+            <div class="tip">
+                <div class="tip-icon"><i class="fas fa-bed"></i></div>
+                <h3>Recovery Matters</h3>
+                <p>Don't skip rest days - they're when your body adapts and grows stronger</p>
+            </div>
+            <div class="tip">
+                <div class="tip-icon"><i class="fas fa-apple-alt"></i></div>
+                <h3>Nutrition & Hydration</h3>
+                <p>Hydrate properly and fuel your body with the right nutrients</p>
+            </div>
+            <div class="tip">
+                <div class="tip-icon"><i class="fas fa-chart-line"></i></div>
+                <h3>Track Progress</h3>
+                <p>Monitor time, heart rate, and perceived effort to see improvements</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">CardioCore</div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#cardio-science">Cardio Science</a></li>
+                    <li><a href="#tips">Pro Tips</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for the latest fitness tips</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CardioCore. All rights reserved. Website by <a href="https://74fazey.vercel.app" target="_blank">Eyad Abdelrehim</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
